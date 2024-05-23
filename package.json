@@ -1,6 +1,6 @@
 {
   "name": "@iwe/yaml-doc-query",
-  "version": "1.0.0",
+  "version": "1.1.0-publish-iwe-npm.0",
   "description": "lookup values along with their position in yaml documents",
   "repository": {
     "type": "git",
@@ -12,7 +12,6 @@
   "main": "dist/yamlDocQuery.cjs",
   "module": "dist/yamlDocQuery.mjs",
   "types": "dist/yamlDocQuery.d.ts",
-
   "exports": {
     ".": {
       "import": "./dist/yamlDocQuery.mjs",
