@@ -1,10 +1,18 @@
 {
-  "name": "yaml-doc-query",
-  "version": "0.2.1",
+  "name": "@iwe/yaml-doc-query",
+  "version": "1.0.0",
   "description": "lookup values along with their position in yaml documents",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/I-We/yaml-doc-query"
+  },
+  "publishConfig": {
+    "registry": "https://iwe-714037566034.d.codeartifact.eu-west-1.amazonaws.com/npm/iwe-tools/"
+  },
   "main": "dist/yamlDocQuery.cjs",
   "module": "dist/yamlDocQuery.mjs",
   "types": "dist/yamlDocQuery.d.ts",
+
   "exports": {
     ".": {
       "import": "./dist/yamlDocQuery.mjs",
@@ -13,7 +21,7 @@
     }
   },
   "scripts": {
-    "prepare": "npm run test && npm run build",
+    "prepare": "npm run build",
     "pretest": "markdown-to-test ",
     "test": "jest",
     "prebuild": "rm -rf dist && tsc",
@@ -23,10 +31,6 @@
   },
   "jest": {
     "preset": "ts-jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/Xiphe/yaml-doc-query.git"
   },
   "keywords": [
     "yaml",
